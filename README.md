@@ -354,21 +354,21 @@ flowchart TD
     subgraph Frontmatter["YAML Frontmatter"]
         direction TB
         NAME(name: agent-name):::secondary
-        DESC(description: when to use):::secondary
-        TOOLS(tools: Read, Glob, Grep):::accent
-        MODEL(model: sonnet):::accent
-        PERMS(permissionMode: default):::neutral
+        NAME --> DESC(description: when to use):::secondary
+        DESC --> TOOLS(tools: Read, Glob, Grep):::accent
+        TOOLS --> MODEL(model: sonnet):::accent
+        MODEL --> PERMS(permissionMode: default):::neutral
     end
 
     subgraph Body["Markdown Body = System Prompt"]
         direction TB
         ROLE(Role Definition):::success
-        STEPS(Step-by-Step Instructions):::success
-        FORMAT(Output Format):::success
+        ROLE --> STEPS(Step-by-Step Instructions):::success
+        STEPS --> FORMAT(Output Format):::success
     end
 
-    FILE --> Frontmatter
-    FILE --> Body
+    FILE --> NAME
+    FILE --> ROLE
 ```
 
 ### Agent Definition Template
