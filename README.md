@@ -286,7 +286,7 @@ By the end of this guide, you will be able to:
     'tertiaryTextColor': '#f8fafc'
   }
 }}%%
-flowchart LR
+flowchart TD
     classDef primary fill:#1e40af,stroke:#1e3a8a,stroke-width:1px,color:#ffffff,rx:5,ry:5
     classDef secondary fill:#5b21b6,stroke:#4c1d95,stroke-width:1px,color:#ffffff,rx:5,ry:5
     classDef success fill:#047857,stroke:#065f46,stroke-width:1px,color:#ffffff,rx:5,ry:5
@@ -297,9 +297,9 @@ flowchart LR
     C(Subagents):::secondary
     D(Agent Teams):::secondary
     E(Comparison):::accent
-    F(Hands-On<br/>Scenario):::accent
-    G(Agent<br/>Definitions):::success
-    H(Delegation<br/>Patterns):::success
+    F(Hands-On Scenario):::accent
+    G(Agent Definitions):::success
+    H(Delegation Patterns):::success
     I((Done)):::primary
 
     A --> B --> C --> D --> E --> F --> G --> H --> I
@@ -560,7 +560,7 @@ flowchart TD
     LEAD(Team Lead):::primary
 
     subgraph Shared["Shared Infrastructure"]
-        direction LR
+        direction TB
         TASKS[(Task List)]:::warning
         MAIL(Mailbox):::accent
     end
@@ -723,7 +723,7 @@ flowchart TD
     'tertiaryTextColor': '#f8fafc'
   }
 }}%%
-flowchart LR
+flowchart TD
     classDef primary fill:#1e40af,stroke:#1e3a8a,stroke-width:1px,color:#ffffff,rx:5,ry:5
     classDef secondary fill:#5b21b6,stroke:#4c1d95,stroke-width:1px,color:#ffffff,rx:5,ry:5
     classDef success fill:#047857,stroke:#065f46,stroke-width:1px,color:#ffffff,rx:5,ry:5
@@ -1307,7 +1307,7 @@ Architect → Frontend Dev → Backend Dev → Tester
     'tertiaryTextColor': '#f8fafc'
   }
 }}%%
-flowchart LR
+flowchart TD
     classDef primary fill:#1e40af,stroke:#1e3a8a,stroke-width:1px,color:#ffffff,rx:5,ry:5
     classDef secondary fill:#5b21b6,stroke:#4c1d95,stroke-width:1px,color:#ffffff,rx:5,ry:5
     classDef success fill:#047857,stroke:#065f46,stroke-width:1px,color:#ffffff,rx:5,ry:5
